@@ -1,0 +1,96 @@
+<!-- MAIN LOGO'S -->
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#mainLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#mainLogo--black"></use>
+</svg>
+
+<!-- ARROWS -->
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#arrow--down"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#arrow--left"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#arrow--left--light"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#arrow--light--right"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#arrow--right"></use>
+</svg>
+
+<!-- PARTNERS -->
+
+ <svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#abusLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#fujiFilmLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#goProLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#jaguarLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#landRoverLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#lenovoLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#levitateLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#porscheLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#sksLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#socarLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#suzukiLogo"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#volvoLogo"></use>
+</svg>
+
+
+
+<!-- SOCIALS -->
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#facebookIcon"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#youtubeIcon"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="./Images/SVG/sprite.svg#instagramIcon"></use>
+</svg>
