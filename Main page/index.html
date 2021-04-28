@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Головна</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./dist/style.css" />
+        <title>Головна</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container content wrapper">
+                <div class="header__inner d-flex justify-content-between align-items-center">
+                    <a href="#" class="header__link col-lg-2">
+                        <img class="header__logo" src="./Images/SVG/mainLogo.svg" alt="Ukraine Gravity" />
+                    </a>
+                    <nav class="nav col-lg-5 d-flex justify-content-between align-items-center">
+                        <a href="#" class="nav__link nav__link--active">ГОЛОВНА</a>
+                        <a href="#" class="nav__link">фільми</a>
+                        <a href="#" class="nav__link">проєкти</a>
+                        <a href="#" class="nav__link">контакти</a>
+                        <a href="#" class="nav__link">ua</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- <main> -->
+        <section class="intro">
+            <div class="intro__text--inner container">
+                <div class="intro__text text d-flex justify-content-center flex-column align-items-center">
+                    <div class="text--title">Ukraine gravity production</div>
+                    <div class="text--description">
+                        Провідний екшн продакшн України, ми спеціалізуємося на створенні власних фільмів у сфері пригод
+                        та подорожей, зйомці комерційних та іміджевих відеороликів для світових та українських брендів
+                    </div>
+                    <div class="text--footer button-wrapper d-flex flex-column align-items-center">
+                        <button type="button" class="btn btn-light button--review">ПЕРЕГЛЯНУТИ РОБОТИ</button>
+                        <a href="#" class="arrow">
+                            <svg class="icon arrow--down">
+                                <use xlink:href="./Images/SVG/sprite.svg#arrow--down"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <aside class="intro__aside-inner">
+                <div class="aside__links">
+                    <a href="#"  class="aside__links--item">facebook</a>
+                    <a href="#" class="aside__links--item">youtube</a>
+                    <a href="#" class="aside__links--item">instagram</a>
+                </div>
+            </aside>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <!-- </main> -->
+        <footer></footer>
+    </body>
 </html>
