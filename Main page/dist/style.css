@@ -7,6 +7,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #010101;
   overflow-x: hidden;
 }
 
@@ -86,11 +87,11 @@ body a {
   width: 67%;
 }
 .intro__text--inner .text--footer {
-  width: 16.375rem;
+  width: 18.375rem;
 }
 .intro__text--inner .text--footer .button--review {
   background-color: #ffffff;
-  border: none;
+  border: 1px solid #ffffff;
   border-radius: 0px;
   padding: 1rem;
   font-family: Montserrat;
@@ -99,6 +100,12 @@ body a {
   font-size: 18px;
   line-height: 24px;
   color: #010101;
+  transition: 0.5s;
+}
+.intro__text--inner .text--footer .button--review:hover, .intro__text--inner .text--footer .button--review:focus {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
 }
 .intro__text--inner .text--footer .arrow {
   margin-top: 8rem;
@@ -135,4 +142,173 @@ body a {
 .intro__aside-inner .aside__links--item:hover, .intro__aside-inner .aside__links--item:focus {
   background-color: #ffffff;
   color: #010101;
+}
+
+.about {
+  background-color: #010101;
+  color: #ffffff;
+}
+.about--wrapper {
+  margin-top: 8rem;
+}
+.about .statistic .counter--number {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 76px;
+}
+.about .statistic .counter--label {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+.about .statistic .counter--projects {
+  width: 13.4375rem;
+}
+.about .statistic .counter--hours {
+  width: 14.8125rem;
+}
+.about .statistic .counter--brands {
+  width: 12.9375rem;
+}
+.about .statistic .counter--views {
+  width: 17.875rem;
+}
+.about .opportunities {
+  margin-top: 7.6875rem;
+}
+.about .opportunities__item {
+  width: 21.375rem;
+  height: 13.375rem;
+}
+.about .opportunities__item--text {
+  background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+  opacity: 0.8;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 64px;
+  color: #ffffff;
+  width: 21.375rem;
+  height: 13.375rem;
+  text-transform: uppercase;
+}
+.about .opportunities__item--shoot {
+  background: url("../Images/PNG/filmingImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about .opportunities__item--takePicture {
+  background: url("../Images/PNG/photographingImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about .opportunities__item--creative {
+  background: url("../Images/PNG/creativeImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about .story--wrapper {
+  margin-top: 7.5625rem;
+}
+.about .story__text--title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.about .story__text--body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+.about .story__photo img {
+  width: 35.3125rem;
+  height: 39.1875rem;
+}
+
+.work--wrapper {
+  margin-top: 7.5rem;
+  padding: 0;
+}
+.work__photos {
+  height: 51.375rem;
+  display: grid;
+  grid-template-areas: "largetop largetop smalltop1" "largetop largetop smalltop2" "smallbottom1 smallbottom2 smallbottom3";
+  gap: 2px;
+}
+.work__photos .large {
+  width: 59.9375rem;
+  height: 34.4375rem;
+}
+.work__photos .large button {
+  padding: 12px;
+  max-width: 11.5625rem;
+}
+.work__photos .small {
+  width: 29.875rem;
+  height: 17.125rem;
+}
+.work__photos .small__text--title {
+  display: none;
+}
+.work__photos .small button {
+  display: none;
+}
+.work__photos .mountains {
+  background: url("../Images/PNG/guysAtMountainsImage.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: largetop;
+}
+.work__photos .porsche {
+  background: url("../Images/PNG/twoPorsche.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: smallbottom1;
+}
+.work__photos .suzuki {
+  background: url("../Images/PNG/greenSuzuki.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: smallbottom2;
+}
+.work__photos .sunset {
+  background: url("../Images/PNG/susnsetChill.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: smallbottom3;
+}
+.work__photos .kayyaking {
+  background: url("../Images/PNG/guyAtKayyak.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: smalltop2;
+}
+.work__photos .chevrolet {
+  background: url("../Images/PNG/guysAtChevroletImage.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: smalltop1;
 }
