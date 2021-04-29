@@ -21,6 +21,46 @@ body a {
     outline: none;
 }
 
+.button--black {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    padding: 1rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #010101;
+    transition: 0.5s;
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+    }
+}
+
+.button-transparent {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    padding: 1rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #010101;
+    transition: 0.5s;
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+    }
+}
+
 // HEADER
 
 .header {
@@ -98,25 +138,7 @@ body a {
 
             &--footer {
                 width: 18.375rem;
-                .button--review {
-                    background-color: #ffffff;
-                    border: 1px solid #ffffff;
-                    border-radius: 0px;
-                    padding: 1rem;
-                    font-family: Montserrat;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 24px;
-                    color: #010101;
-                    transition: 0.5s;
-                    &:hover,
-                    &:focus {
-                        color: #ffffff;
-                        background-color: transparent;
-                        border: 1px solid #ffffff;
-                    }
-                }
+
                 .arrow {
                     margin-top: 8rem;
                     width: 35px;
@@ -284,24 +306,62 @@ body a {
         padding: 0;
     }
     &__photos {
-        height: 51.375rem;
-        display: grid;
-        grid-template-areas:
-            'largetop largetop smalltop1'
-            'largetop largetop smalltop2'
-            'smallbottom1 smallbottom2 smallbottom3';
-        gap: 2px;
+        // height: 51.375rem;
+        // display: grid;
+        // grid-template-areas:
+        //     'largetop largetop smalltop1'
+        //     'largetop largetop smalltop2'
+        //     'smallbottom1 smallbottom2 smallbottom3';
+        // gap: 2px;
         .large {
             width: 59.9375rem;
+            width: 100%;
             height: 34.4375rem;
-            button {
-                padding: 12px;
-                max-width: 11.5625rem;
-        }
+            padding: 2px;
+
+            &__text--title {
+                font-family: Oswald;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 34px;
+                text-transform: uppercase;
+                color: #ffffff;
+                margin-bottom: 1rem;
+            }
+
+            .strip {
+                width: 20rem;
+                height: 1px;
+                background-color: #ffffff;
+                margin-bottom: 1rem;
+            }
+            .button-transparent {
+                margin-top: 160px;
+                background-color: transparent;
+                border: 1px solid #ffffff;
+                border-radius: 0px;
+                padding: 1rem;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                color: #010101;
+                transition: 0.5s;
+                &:hover,
+                &:focus {
+                    color: #ffffff;
+                    // background-color: transparent;
+                    border: 1px solid #ffffff;
+                }
+            }
         }
         .small {
             width: 29.875rem;
             height: 17.125rem;
+            width: 100%;
+            padding: 2px;
             &__text--title {
                 display: none;
             }
@@ -309,12 +369,19 @@ body a {
                 display: none;
             }
         }
+
+        .secondPartOfFirstPart {
+            padding: 0;
+        }
+
         .mountains {
             background: url('../Images/PNG/guysAtMountainsImage.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            grid-area: largetop;
+            // width: 959px;
+            // height: 551px;
+            // grid-area: largetop;
         }
 
         .porsche {
@@ -322,7 +389,7 @@ body a {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            grid-area: smallbottom1;
+            // grid-area: smallbottom1;
         }
 
         .suzuki {
@@ -330,14 +397,14 @@ body a {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            grid-area: smallbottom2;
+            // grid-area: smallbottom2;
         }
         .sunset {
             background: url('../Images/PNG/susnsetChill.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            grid-area: smallbottom3;
+            // grid-area: smallbottom3;
         }
 
         .kayyaking {
@@ -345,7 +412,7 @@ body a {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            grid-area: smalltop2;
+            // grid-area: smalltop2;
         }
 
         .chevrolet {
@@ -353,8 +420,24 @@ body a {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            grid-area: smalltop1;
+            // grid-area: smalltop1;
         }
-        
+    }
+
+    .button--wrapper {
+        margin-top: 40px;
+        .button--transparent {
+            padding: 11px 16px;
+            border: 1px solid #ffffff;
+            border-radius: 0;
+            box-sizing: border-box;
+            background-color: transparent;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+        }
     }
 }

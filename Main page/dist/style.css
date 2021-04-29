@@ -20,6 +20,44 @@ body a {
   outline: none;
 }
 
+.button--black {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  padding: 1rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #010101;
+  transition: 0.5s;
+}
+.button--black:hover, .button--black:focus {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.button-transparent {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  padding: 1rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #010101;
+  transition: 0.5s;
+}
+.button-transparent:hover, .button-transparent:focus {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -88,24 +126,6 @@ body a {
 }
 .intro__text--inner .text--footer {
   width: 18.375rem;
-}
-.intro__text--inner .text--footer .button--review {
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 0px;
-  padding: 1rem;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  color: #010101;
-  transition: 0.5s;
-}
-.intro__text--inner .text--footer .button--review:hover, .intro__text--inner .text--footer .button--review:focus {
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid #ffffff;
 }
 .intro__text--inner .text--footer .arrow {
   margin-top: 8rem;
@@ -246,23 +266,51 @@ body a {
   margin-top: 7.5rem;
   padding: 0;
 }
-.work__photos {
-  height: 51.375rem;
-  display: grid;
-  grid-template-areas: "largetop largetop smalltop1" "largetop largetop smalltop2" "smallbottom1 smallbottom2 smallbottom3";
-  gap: 2px;
-}
 .work__photos .large {
   width: 59.9375rem;
+  width: 100%;
   height: 34.4375rem;
+  padding: 2px;
 }
-.work__photos .large button {
-  padding: 12px;
-  max-width: 11.5625rem;
+.work__photos .large__text--title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.work__photos .large .strip {
+  width: 20rem;
+  height: 1px;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+.work__photos .large .button-transparent {
+  margin-top: 160px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  padding: 1rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #010101;
+  transition: 0.5s;
+}
+.work__photos .large .button-transparent:hover, .work__photos .large .button-transparent:focus {
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 .work__photos .small {
   width: 29.875rem;
   height: 17.125rem;
+  width: 100%;
+  padding: 2px;
 }
 .work__photos .small__text--title {
   display: none;
@@ -270,45 +318,58 @@ body a {
 .work__photos .small button {
   display: none;
 }
+.work__photos .secondPartOfFirstPart {
+  padding: 0;
+}
 .work__photos .mountains {
   background: url("../Images/PNG/guysAtMountainsImage.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-area: largetop;
 }
 .work__photos .porsche {
   background: url("../Images/PNG/twoPorsche.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-area: smallbottom1;
 }
 .work__photos .suzuki {
   background: url("../Images/PNG/greenSuzuki.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-area: smallbottom2;
 }
 .work__photos .sunset {
   background: url("../Images/PNG/susnsetChill.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-area: smallbottom3;
 }
 .work__photos .kayyaking {
   background: url("../Images/PNG/guyAtKayyak.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-area: smalltop2;
 }
 .work__photos .chevrolet {
   background: url("../Images/PNG/guysAtChevroletImage.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-area: smalltop1;
+}
+.work .button--wrapper {
+  margin-top: 40px;
+}
+.work .button--wrapper .button--transparent {
+  padding: 11px 16px;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
