@@ -508,4 +508,66 @@ body a {
             }
         }
     }
+
+    .card-group {
+        margin-top: 56px;
+        .card {
+            border-radius: 0;
+            height: 228px;
+            &-body {
+                padding: 32px;
+            }
+            &-title {
+                margin-bottom: 24px;
+                &__text {
+                    .text--heading {
+                        margin-bottom: 8px;
+                        font-family: Oswald;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    .text--subHeading {
+                        font-family: Raleway;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+                &__image {
+                }
+                .lenovo {
+                    width: 138px;
+                    height: 48px;
+                }
+                .thomas {
+                    width: 48px;
+                    height: 48px;
+                }
+
+                .landrover {
+                    width: 93px;
+                    height: 48px;
+                }
+            }
+
+            &-text__main {
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .card--light {
+            background-color: #c7c7c7;
+            color: #1e1e1e;
+        }
+        .card--dark {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+    }
 }

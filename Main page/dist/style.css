@@ -429,3 +429,58 @@ body a {
   width: 10px;
   height: 20px;
 }
+.reviews .card-group {
+  margin-top: 56px;
+}
+.reviews .card-group .card {
+  border-radius: 0;
+  height: 228px;
+}
+.reviews .card-group .card-body {
+  padding: 32px;
+}
+.reviews .card-group .card-title {
+  margin-bottom: 24px;
+}
+.reviews .card-group .card-title__text .text--heading {
+  margin-bottom: 8px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.reviews .card-group .card-title__text .text--subHeading {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+.reviews .card-group .card-title .lenovo {
+  width: 138px;
+  height: 48px;
+}
+.reviews .card-group .card-title .thomas {
+  width: 48px;
+  height: 48px;
+}
+.reviews .card-group .card-title .landrover {
+  width: 93px;
+  height: 48px;
+}
+.reviews .card-group .card-text__main {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.reviews .card-group .card--light {
+  background-color: #c7c7c7;
+  color: #1e1e1e;
+}
+.reviews .card-group .card--dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
