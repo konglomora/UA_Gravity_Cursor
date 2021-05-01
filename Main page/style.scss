@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Oswald:wght@400;500;600;700&family=Raleway:wght@500&display=swap');
 
+// GLOBAL STYLES
+
 *,
 *::after,
 *::before {
@@ -103,7 +105,7 @@ body a {
     }
 }
 
-//  INTRO
+// SECTION
 
 .intro {
     background: #535a5e url('../Images/PNG/headerBackground.png');
@@ -189,7 +191,7 @@ body a {
     }
 }
 
-// ABOUT
+// SECTION
 
 .about {
     background-color: #010101;
@@ -303,6 +305,8 @@ body a {
         }
     }
 }
+
+// SECTION
 
 .work {
     &--wrapper {
@@ -452,6 +456,8 @@ body a {
     }
 }
 
+// SECTION
+
 .partners {
     background-color: #ffffff;
     &--wrapper {
@@ -464,6 +470,8 @@ body a {
         margin-top: 48px;
     }
 }
+
+// SECTION
 
 .slider {
     .slider__title {
@@ -484,10 +492,12 @@ body a {
     }
 }
 
+// SECTION
+
 .reviews {
     &--wrapper {
         width: 100%;
-        padding: 120px 0;
+        padding: 120px 0 0;
     }
 
     .slider {
@@ -513,9 +523,10 @@ body a {
         margin-top: 56px;
         .card {
             border-radius: 0;
-            height: 228px;
+            min-height: 228px;
             &-body {
                 padding: 32px;
+                padding-bottom: 10px;
             }
             &-title {
                 margin-bottom: 24px;
@@ -567,6 +578,70 @@ body a {
         }
         .card--dark {
             background-color: #1e1e1e;
+            color: #ffffff;
+        }
+    }
+}
+
+// FOOTER
+
+footer {
+    .mountains {
+        height: 10em;
+        background: linear-gradient(180deg, #010101 11.52%, rgba(41, 40, 40, 0.76) 100%);
+        &--big {
+            width: 230px;
+            margin-left: 8em;
+        }
+    }
+
+    .footer__body {
+        height: 13.75em;
+
+        .footer__nav {
+            .nav__link {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 32px;
+                color: #ffffff;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: 0.3s;
+                &--active {
+                    font-weight: 600;
+                }
+                &:focus,
+                &:hover {
+                    font-weight: 600;
+                    transition: 0.3s;
+                }
+                .icon {
+                    width: 24px;
+                }
+            }
+        }
+
+        .nav__links--wrapper {
+            width: 80%;
+            height: 72px;
+            margin-bottom: 2em;
+        }
+
+        .footer__icons {
+            width: 29%;
+            height: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        .footer__naming {
+            text-transform: uppercase;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 32px;
             color: #ffffff;
         }
     }
