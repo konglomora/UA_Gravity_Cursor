@@ -310,7 +310,7 @@ body a {
 }
 .work__photos .small {
   width: 29.875rem;
-  height: 17.125rem;
+  height: 18.125rem;
   width: 100%;
   padding: 2px;
 }
@@ -557,7 +557,23 @@ footer .footer__body .footer__naming {
     width: 100%;
   }
   .about .story__photo img {
-    width: 122%;
+    width: 118%;
     height: 100%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .partners__logoList .logoList__item {
+    display: inline-flex;
+    justify-content: center;
+    min-width: 24.666667%;
+  }
+
+  .reviews .card-group .card-title .lenovo {
+    width: 30%;
+    height: 30%;
+  }
+  .reviews .card-group .card-title .landrover {
+    width: 25%;
+    height: 22%;
   }
 }

@@ -369,7 +369,7 @@ body a {
         }
         .small {
             width: 29.875rem;
-            height: 17.125rem;
+            height: 18.125rem;
             width: 100%;
             padding: 2px;
             &__text--title {
@@ -672,8 +672,37 @@ footer {
         }
         .story {
             &__photo img {
-                width: 122%;
+                width: 118%;
                 height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .partners {
+        &__logoList {
+            .logoList__item {
+                display: inline-flex;
+                justify-content: center;
+                min-width: 24.666667%;
+            }
+        }
+    }
+
+    .reviews {
+        .card-group {
+            .card {
+                &-title {
+                    .lenovo {
+                        width: 30%;
+                        height: 30%;
+                    }
+                    .landrover {
+                        width: 25%;
+                        height: 22%;
+                    }
+                }
             }
         }
     }
