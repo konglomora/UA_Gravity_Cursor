@@ -114,6 +114,7 @@ body a {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .intro__text--inner .text--description {
   font-family: Montserrat;
@@ -238,6 +239,12 @@ body a {
   background: url("../Images/PNG/creativeImage.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+.about .story {
+  background: url("../Images/PNG/bikeGuyStoryImage.png");
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .about .story--wrapper {
@@ -556,10 +563,6 @@ footer .footer__body .footer__naming {
   .about .opportunities__item--text {
     width: 100%;
   }
-  .about .story__photo img {
-    width: 118%;
-    height: 100%;
-  }
 }
 @media screen and (max-width: 1025px) {
   .partners__logoList .logoList__item {
@@ -575,5 +578,28 @@ footer .footer__body .footer__naming {
   .reviews .card-group .card-title .landrover {
     width: 25%;
     height: 22%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header .nav {
+    width: 260%;
+  }
+
+  .intro__text--inner .text--footer .arrow {
+    margin-top: 3rem;
+  }
+
+  .about .opportunities {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .opportunities__item {
+    width: 65%;
+    margin-bottom: 12px;
+  }
+
+  .reviews .card-group .card:nth-child(3) {
+    display: none;
   }
 }

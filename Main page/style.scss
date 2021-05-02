@@ -130,6 +130,7 @@ body a {
                 text-transform: uppercase;
                 color: #ffffff;
                 margin-bottom: 1rem;
+                text-align: center;
             }
 
             &--description {
@@ -280,6 +281,10 @@ body a {
     }
 
     .story {
+        background: url('../Images/PNG/bikeGuyStoryImage.png');
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
         &--wrapper {
             margin-top: 7.5625rem;
         }
@@ -670,12 +675,12 @@ footer {
                 }
             }
         }
-        .story {
-            &__photo img {
-                width: 118%;
-                height: 100%;
-            }
-        }
+        // .story {
+        //     &__photo img {
+        //         width: 118%;
+        //         height: 100%;
+        //     }
+        // }
     }
 }
 
@@ -702,6 +707,40 @@ footer {
                         width: 25%;
                         height: 22%;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        .nav {
+            width: 260%;
+        }
+    }
+
+    .intro__text--inner {
+        .text--footer .arrow {
+            margin-top: 3rem;
+        }
+    }
+    .about {
+        .opportunities {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            &__item {
+                width: 65%;
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .reviews {
+        .card-group {
+            .card {
+                &:nth-child(3) {
+                    display: none;
                 }
             }
         }
