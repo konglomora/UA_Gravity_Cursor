@@ -278,7 +278,6 @@ body a {
 .work__photos .large {
   width: 59.9375rem;
   width: 100%;
-  height: 34.4375rem;
   padding: 2px;
 }
 .work__photos .large__text--title {
@@ -601,5 +600,95 @@ footer .footer__body .footer__naming {
 
   .reviews .card-group .card:nth-child(3) {
     display: none;
+  }
+}
+@media screen and (max-width: 865px) {
+  .work--wrapper {
+    padding: 0 15px;
+  }
+  .work__photos .first-part {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .work__photos .first-part .large {
+    height: 24rem;
+  }
+  .work__photos .first-part .large .strip {
+    display: none;
+  }
+  .work__photos .first-part .large .button--black {
+    display: none;
+  }
+  .work__photos .first-part .small {
+    height: 24rem;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .work__photos .second-part {
+    flex-direction: column;
+  }
+  .work__photos .second-part .small {
+    height: 24rem;
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .intro__text .text--title {
+    margin-bottom: 3rem;
+  }
+  .intro__text .text--description {
+    display: none;
+  }
+  .intro__text .text--footer .arrow {
+    margin-top: 5rem;
+  }
+  .intro__text .button--black {
+    padding: 11px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+  .intro__text .button--black:focus, .intro__text .button--black:hover {
+    background-color: #ffffff;
+    color: #010101;
+    transition: 0.5s;
+  }
+
+  .about--wrapper {
+    min-width: 100%;
+  }
+  .about .statistic .counter--hours {
+    width: 34%;
+    width: 32%;
+  }
+  .about .statistic .counter--views {
+    width: 43%;
+    width: 41%;
+  }
+
+  .reviews .card-group .card:nth-child(1) {
+    display: none;
+  }
+
+  .partners__logoList .logoList__item {
+    min-width: 32.666667%;
+  }
+
+  footer .footer__body {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container,
+.container-sm {
+    min-width: 100%;
   }
 }
