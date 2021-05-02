@@ -7,6 +7,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
   background-color: #010101;
   overflow-x: hidden;
 }
@@ -71,6 +72,7 @@ body a {
   height: 80px;
 }
 .header .nav {
+  width: 46%;
   text-transform: uppercase;
 }
 .header .nav__link {
@@ -138,7 +140,7 @@ body a {
 }
 .intro__aside-inner {
   width: 15rem;
-  height: 19px;
+  height: 21px;
   position: absolute;
   top: 303px;
   right: -103px;
@@ -536,4 +538,26 @@ footer .footer__body .footer__naming {
   font-size: 16px;
   line-height: 32px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .about .statistic {
+    flex-wrap: wrap;
+  }
+  .about .statistic .counter--projects {
+    width: 50%;
+  }
+  .about .statistic .counter--hours {
+    width: 31%;
+  }
+  .about .opportunities__item {
+    width: 30.3%;
+  }
+  .about .opportunities__item--text {
+    width: 100%;
+  }
+  .about .story__photo img {
+    width: 122%;
+    height: 100%;
+  }
 }

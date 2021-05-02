@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
     background-color: #010101;
     overflow-x: hidden;
 }
@@ -83,6 +84,7 @@ body a {
     &__logo {
     }
     .nav {
+        width: 46%;
         text-transform: uppercase;
         &__link {
             font-family: Montserrat;
@@ -160,7 +162,7 @@ body a {
 
     &__aside-inner {
         width: 15rem;
-        height: 19px;
+        height: 21px;
         position: absolute;
         // background:aqua;
         top: 303px;
@@ -643,6 +645,36 @@ footer {
             font-size: 16px;
             line-height: 32px;
             color: #ffffff;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about {
+        .statistic {
+            flex-wrap: wrap;
+            .counter {
+                &--projects {
+                    width: 50%;
+                }
+                &--hours {
+                    width: 31%;
+                }
+            }
+        }
+        .opportunities {
+            &__item {
+                width: 30.3%;
+                &--text {
+                    width: 100%;
+                }
+            }
+        }
+        .story {
+            &__photo img {
+                width: 122%;
+                height: 100%;
+            }
         }
     }
 }
