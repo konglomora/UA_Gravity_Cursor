@@ -30,13 +30,16 @@
                     <a href="#" class="header__link col-lg-2">
                         <img class="header__logo" src="./Images/SVG/mainLogo.svg" alt="Ukraine Gravity" />
                     </a>
-                    <nav class="nav d-flex justify-content-between align-items-center">
+                    <nav class="nav">
                         <a href="#" class="nav__link nav__link--active">ГОЛОВНА</a>
                         <a href="#" class="nav__link">фільми</a>
                         <a href="#" class="nav__link">проєкти</a>
                         <a href="#" class="nav__link">контакти</a>
                         <a href="#" class="nav__link">ua</a>
                     </nav>
+                    <a href="#" class="link--burger">
+                        <img src="./Images/SVG/List.svg" alt="List" />
+                    </a>
                 </div>
             </div>
         </header>
@@ -70,22 +73,26 @@
             </section>
             <section class="about">
                 <div class="about--wrapper container">
-                    <div class="statistic d-flex justify-content-between">
-                        <div class="counter counter--projects d-inline-flex align-items-end">
-                            <div class="counter--number">12</div>
-                            <div class="counter--label">ПРОЕКТІВ</div>
+                    <div class="statistic">
+                        <div class="counter--wrapper counter--wrapper--firstPart">
+                            <div class="counter counter--projects d-inline-flex align-items-end">
+                                <div class="counter--number">12</div>
+                                <div class="counter--label">ПРОЕКТІВ</div>
+                            </div>
+                            <div class="counter counter--hours d-inline-flex align-items-end">
+                                <div class="counter--number">14k</div>
+                                <div class="counter--label">ГОДИН ЗЙОМОК</div>
+                            </div>
                         </div>
-                        <div class="counter counter--hours d-inline-flex align-items-end">
-                            <div class="counter--number">14k</div>
-                            <div class="counter--label">ГОДИН ЗЙОМОК</div>
-                        </div>
-                        <div class="counter counter--brands d-inline-flex align-items-end">
-                            <div class="counter--number">25</div>
-                            <div class="counter--label">БРЕНДІВ</div>
-                        </div>
-                        <div class="counter counter--views d-inline-flex align-items-end">
-                            <div class="counter--number">99k</div>
-                            <div class="counter--label">ПЕРЕГЛЯДІВ</div>
+                        <div class="counter--wrapper counter--wrapper--secondPart">
+                            <div class="counter counter--brands d-inline-flex align-items-end">
+                                <div class="counter--number">25</div>
+                                <div class="counter--label">БРЕНДІВ</div>
+                            </div>
+                            <div class="counter counter--views d-inline-flex align-items-end">
+                                <div class="counter--number">99k</div>
+                                <div class="counter--label">ПЕРЕГЛЯДІВ</div>
+                            </div>
                         </div>
                     </div>
                     <div class="opportunities d-flex justify-content-between">
@@ -140,48 +147,35 @@
                 <div class="work--wrapper container-fluid">
                     <div class="work__photos">
                         <div class="first-part d-flex">
-                            <div
-                                class="large mountains col-xl-8 d-flex justify-content-center align-items-center flex-column"
-                            >
-                                <div class="large__text--title">DISCOVER UKRAINE SVYDOVETS’</div>
-                                <div class="strip"></div>
-                                <button type="button" class="btn btn-light button--black">ПЕРЕГЛЯНУТИ ПРОЄКТ</button>
-                            </div>
-                            <div class="secondPartOfFirstPart col-xl-4 col-lg-4">
-                                <div class="small chevrolet col-xl-12">
-                                    <div class="small__text--title">DISCOVER UKRAINE SVYDOVETS’</div>
-                                    <button type="button" class="btn btn-light button--transparent">
+                            <div class="large mountains col-xl-8">
+                                <div class="large__content--wrapper">
+                                    <div class="large__text--title">DISCOVER UKRAINE SVYDOVETS’</div>
+                                    <div class="strip"></div>
+                                    <button type="button" class="btn btn-light button--black">
                                         ПЕРЕГЛЯНУТИ ПРОЄКТ
                                     </button>
                                 </div>
+                            </div>
+                            <div class="secondPartOfFirstPart col-xl-4 col-lg-4">
+                                <div class="small chevrolet col-xl-12">
+                                    <div class="small__text--title">MOUNTAIN ISOLATION</div>
+                                </div>
                                 <div class="small kayyaking col-12">
-                                    <div class="small__text--title">DISCOVER UKRAINE SVYDOVETS’</div>
-                                    <button type="button" class="btn btn-light button--transparent">
-                                        ПЕРЕГЛЯНУТИ ПРОЄКТ
-                                    </button>
+                                    <div class="small__text--title">DISCOVER UKRAINE 2.0</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="second-part d-flex">
                             <div class="small porsche col-xl-4">
-                                <div class="small__text--title">DISCOVER UKRAINE SVYDOVETS’</div>
-                                <button type="button" class="btn btn-light button--transparent">
-                                    ПЕРЕГЛЯНУТИ ПРОЄКТ
-                                </button>
+                                <div class="small__text--title">
+                                    UKRAINE GRAVITY ТА НАЙКРАЩИЙ ПІЛОТ FPV В УКРАЇНІ DOROSH.RAW
+                                </div>
                             </div>
                             <div class="small suzuki col-xl-4">
-                                <div class="small__text--title">DISCOVER UKRAINE SVYDOVETS’</div>
-                                <button type="button" class="btn btn-light button--transparent">
-                                    ПЕРЕГЛЯНУТИ ПРОЄКТ
-                                </button>
+                                <div class="small__text--title">Porsche Ukraine</div>
                             </div>
-                            <div class="small sunset col-xl-4">
-                                <div class="small__text--title">DISCOVER UKRAINE SVYDOVETS’</div>
-                                <button type="button" class="btn btn-light button--transparent">
-                                    ПЕРЕГЛЯНУТИ ПРОЄКТ
-                                </button>
-                            </div>
+                            <div class="small sunset col-xl-4"></div>
                         </div>
                     </div>
                     <div class="button--wrapper d-flex justify-content-center">
@@ -345,16 +339,16 @@
                     <a href="#" class="header__link col-2">
                         <img class="header__logo" src="./Images/SVG/mainLogo.svg" alt="Ukraine Gravity" />
                     </a>
-                    <div class="col-8 d-flex align-items-center flex-column">
-                        <div class="nav__links--wrapper d-flex justify-content-center align-items-end">
-                            <nav class="footer__nav col-12 d-flex justify-content-around align-items-end">
+                    <div class="footer__body--navBlock">
+                        <div class="nav__links--wrapper">
+                            <nav class="footer__nav col-12">
                                 <a href="#" class="nav__link nav__link--active">ГОЛОВНА</a>
                                 <a href="#" class="nav__link">фільми</a>
                                 <a href="#" class="nav__link">проєкти</a>
                                 <a href="#" class="nav__link">контакти</a>
                             </nav>
                         </div>
-                        <nav class="footer__nav footer__icons d-flex justify-content-between align-items-center">
+                        <nav class="footer__icons">
                             <a href="#" class="nav__link">
                                 <svg class="icon">
                                     <use xlink:href="./Images/SVG/sprite.svg#facebookIcon"></use>
@@ -371,7 +365,7 @@
                                 </svg>
                             </a>
                         </nav>
-                        <p class="d-flex justify-content-center footer__naming">Ukraine gravity production</p>
+                        <p class="footer__naming">Ukraine gravity production</p>
                     </div>
                 </div>
             </div>
