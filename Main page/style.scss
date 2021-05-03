@@ -114,7 +114,7 @@ body a {
 // SECTION
 
 .intro {
-    background: #535a5e url('../Images/PNG/headerBackground.png');
+    background: #0000 url('../Images/PNG/headerBackground.png');
 
     background-size: cover;
     background-position: center;
@@ -291,11 +291,11 @@ body a {
     }
 
     .story {
-        background: url('../Images/PNG/bikeGuyStoryImage.png');
-        background-position: right;
-        background-size: contain;
-        background-repeat: no-repeat;
         &--wrapper {
+            background: url('../Images/PNG/bikeGuyStoryImage.png');
+            background-position: right;
+            background-size: contain;
+            background-repeat: no-repeat;
             margin-top: 7.5625rem;
         }
         &__text {
@@ -486,6 +486,9 @@ body a {
 
     &__logoList {
         margin-top: 48px;
+        .logoList__item {
+            min-width: 16%;
+        }
     }
 }
 
@@ -794,9 +797,10 @@ footer {
 
     footer {
         .footer__body {
+            height: 5.75em;
             &--navBlock {
                 margin-left: 0%;
-                width: 70%;
+                width: 79%;
             }
         }
     }
@@ -1028,14 +1032,150 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-    .container,
-    .container-sm {
-        min-width: 100%;
+    .intro {
+        &__text {
+            .text--title {
+                font-size: 50px;
+                line-height: 50px;
+            }
+        }
     }
+
     .about {
+        .statistic {
+            .counter--wrapper {
+                .counter {
+                    &--number {
+                        font-size: 44px;
+                        line-height: 50px;
+                    }
+                    &--label {
+                        text-align: right;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
         .opportunities {
+            margin-top: 2.6875rem;
             &__item {
-                width: 80%;
+                width: 100%;
+            }
+        }
+
+        .story {
+            background-position: left;
+            background-size: 157%;
+        }
+    }
+
+    .work {
+        &--wrapper {
+            .work__photos {
+                .large__text--title {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                .large,
+                .small {
+                    height: 216px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        &--wrapper {
+            padding: 10% 0;
+        }
+        .logoList {
+            &__item {
+                max-width: 33%;
+                &--img {
+                    width: 90%;
+                    // height: 100%;
+                }
+                &--volvo {
+                    order: 3;
+                }
+                &--suzuki {
+                    order: 2;
+                }
+
+                &--porsche {
+                    order: -1;
+                }
+
+                &--jaguar {
+                    order: 1;
+                }
+
+                &--landrover {
+                    order: 4;
+                }
+
+                &--socar {
+                    order: 6;
+                }
+
+                &--lenovo {
+                    display: none;
+                }
+
+                &--fujifilm {
+                    display: none;
+                }
+
+                &--sks {
+                    display: none;
+                }
+
+                &--gopro {
+                    display: none;
+                }
+
+                &--abus {
+                    display: none;
+                }
+
+                &--levitate {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .reviews {
+    }
+
+    footer {
+        .mountains {
+            &--big {
+                width: 165px;
+                height: 81px;
+                margin-left: 0;
+            }
+            &--small {
+                width: 64px;
+                height: 33px;
+            }
+        }
+        .footer__body {
+            &--navBlock {
+                height: 64px;
+            }
+            .header__link {
+                .header__logo {
+                    width: 113px;
+                    height: 47px;
+                }
+            }
+            .footer__icons {
+                width: 40%;
+                height: 39px;
+                margin: auto 0;
             }
         }
     }
