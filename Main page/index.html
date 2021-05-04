@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,11 +23,11 @@
         <link rel="stylesheet" href="./dist/style.css" />
         <title>Головна</title>
     </head>
-    <body>
+    <body class="active">
         <header class="header">
             <div class="container">
                 <div class="header__inner d-flex justify-content-between align-items-center">
-                    <a href="#" class="header__link col-lg-2">
+                    <a href="#" class="header__link header__link--logo col-lg-2">
                         <img class="header__logo" src="./Images/SVG/mainLogo.svg" alt="Ukraine Gravity" />
                     </a>
                     <nav class="nav">
@@ -35,13 +35,24 @@
                         <a href="#" class="nav__link">фільми</a>
                         <a href="#" class="nav__link">проєкти</a>
                         <a href="#" class="nav__link">контакти</a>
-                        <a href="#" class="nav__link">ua</a>
+                        <a href="#" class="nav__link language">ua</a>
                     </nav>
-                    <a href="#" class="link--burger">
+                    <!-- <a href="#" class="link--burger">
                         <img src="./Images/SVG/List.svg" alt="List" />
-                    </a>
+                    </a> -->
+                    <div class="burgerButton">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
+            <nav class="nav__burger">
+                <a href="#" class="nav__burger__link nav__link--active">ГОЛОВНА</a>
+                <a href="#" class="nav__burger__link">фільми</a>
+                <a href="#" class="nav__burger__link">проєкти</a>
+                <a href="#" class="nav__burger__link">контакти</a>
+            </nav>
         </header>
         <main>
             <section class="intro">
@@ -118,8 +129,8 @@
                         <div class="story__text col-xl-6 col-md-9">
                             <div class="story__text--title">історія</div>
                             <div class="story__text--body">
-                                У 2015 році ми заснували спортивну команду - Ukraine Gravity. Наша команда виступала
-                                на українських та світових кубках та чемпіонатах в категоріях швидкісний спуск на
+                                У 2015 році ми заснували спортивну команду - Ukraine Gravity. Наша команда виступала на
+                                українських та світових кубках та чемпіонатах в категоріях швидкісний спуск на
                                 велосипедах.
                                 <br />
                                 <br />
@@ -127,17 +138,15 @@
                                 спорсменів в країні.
                                 <br />
                                 <br />
-                                А далі нас захопила сфера створення креативного контенту в аутдор сфері. І ми
-                                зайнялись створенням короткометражних фільмів та рекламних роликів з інтеграцією
-                                спорту та екшену.
+                                А далі нас захопила сфера створення креативного контенту в аутдор сфері. І ми зайнялись
+                                створенням короткометражних фільмів та рекламних роликів з інтеграцією спорту та екшену.
                                 <br />
                                 <br />
-                                Зараз ми розуміємо, як ніхто, атлетів різних видів спорту та стараємось їм
-                                допомогти.
+                                Зараз ми розуміємо, як ніхто, атлетів різних видів спорту та стараємось їм допомогти.
                                 <br />
                                 <br />
-                                Наша мета - зробити спорт відомий та доступний, донести, що активний відпочинок - це
-                                теж сучасно та популярно.
+                                Наша мета - зробити спорт відомий та доступний, донести, що активний відпочинок - це теж
+                                сучасно та популярно.
                             </div>
                         </div>
                     </div>
@@ -370,5 +379,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>

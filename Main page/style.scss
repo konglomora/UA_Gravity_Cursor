@@ -121,7 +121,11 @@ body a {
     left: 0;
     width: 100%;
     z-index: 100;
-    background: linear-gradient(0deg, rgba(237, 237, 237, 0) 1%, rgba(27, 27, 27, 1) 100%);
+    background: linear-gradient(
+        0deg,
+        rgba(237, 237, 237, 0) 1%,
+        rgba(27, 27, 27, 1) 100%
+    );
     &__inner {
         background-color: transparent;
         height: 80px;
@@ -142,6 +146,16 @@ body a {
             text-decoration: none;
             transition: 0.75s linear;
         }
+        .language {
+            text-transform: uppercase;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 32px;
+            color: #ffffff;
+        }
+
         &__link--active {
             font-weight: 600;
             color: #ffffff;
@@ -151,7 +165,10 @@ body a {
             color: #ffffff;
         }
     }
-    .link--burger {
+    .burgerButton {
+        display: none;
+    }
+    .nav__burger {
         display: none;
     }
 }
@@ -160,13 +177,14 @@ body a {
 
 .intro {
     background: #0000 url('../Images/PNG/headerBackground.png');
-
+    transition: 0.5s;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     &__text--inner {
         height: 700px;
         width: 100%;
+        transition: .5s;
         padding-top: 14.1875em;
         .text {
             &--title {
@@ -180,6 +198,7 @@ body a {
                 color: #ffffff;
                 margin-bottom: 1rem;
                 text-align: center;
+                transition: .5s;
             }
 
             &--description {
@@ -192,6 +211,7 @@ body a {
                 text-align: center;
                 margin-bottom: 2rem;
                 width: 67%;
+                transition: .5s;
             }
 
             &--footer {
@@ -201,9 +221,11 @@ body a {
                     margin-top: 8rem;
                     width: 35px;
                     height: 17.5px;
+                    transition: .5s;
                     .icon {
                         width: 35px;
                         height: 17.5px;
+                        transition: .5s;
                     }
                 }
             }
@@ -302,7 +324,11 @@ body a {
             height: 13.375rem;
 
             &--text {
-                background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+                background: linear-gradient(
+                    360deg,
+                    #010101 -16.15%,
+                    rgba(1, 1, 1, 0) 104.17%
+                );
                 opacity: 0.8;
                 font-family: Oswald;
                 font-style: normal;
@@ -320,7 +346,11 @@ body a {
                 &:focus {
                     cursor: pointer;
                     opacity: 1;
-                    background: linear-gradient(360deg, #010101 15.85%, rgba(1, 1, 1, 0) 138.17%);
+                    background: linear-gradient(
+                        360deg,
+                        #010101 15.85%,
+                        rgba(1, 1, 1, 0) 138.17%
+                    );
                 }
             }
             &--shoot {
@@ -397,7 +427,11 @@ body a {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+                background: linear-gradient(
+                    360deg,
+                    #010101 -16.15%,
+                    rgba(1, 1, 1, 0) 104.17%
+                );
                 opacity: 0.8;
             }
             &__text--title {
@@ -668,7 +702,11 @@ body a {
 footer {
     .mountains {
         height: 10em;
-        background: linear-gradient(180deg, #010101 11.52%, rgba(41, 40, 40, 0.76) 100%);
+        background: linear-gradient(
+            180deg,
+            #010101 11.52%,
+            rgba(41, 40, 40, 0.76) 100%
+        );
         &--big {
             width: 230px;
             margin-left: 8em;
@@ -942,7 +980,11 @@ footer {
                     justify-content: center;
                     align-items: center;
 
-                    background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+                    background: linear-gradient(
+                        360deg,
+                        #010101 -16.15%,
+                        rgba(1, 1, 1, 0) 104.17%
+                    );
                     opacity: 0.8;
                 }
             }
@@ -996,7 +1038,15 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
+    html.overflowHidden {
+        overflow: hidden;
+    }
     .header {
+        &.fixed {
+            z-index: 3;
+            position: fixed;
+        }
+
         .container {
             max-width: 100%;
         }
@@ -1007,15 +1057,92 @@ footer {
                 }
                 justify-content: flex-end;
             }
-            .link--burger {
+            .burgerButton {
+                z-index: 2;
+                width: 100px;
+                height: 15px;
+                position: relative;
                 margin-left: 24px;
+                margin-right: 10px;
                 display: block;
+                & > span {
+                    width: 25px;
+                    height: 2px;
+                    position: absolute;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    transition: 0.5s;
+                    &:first-of-type {
+                        top: 0;
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 50%;
+                    }
+                    &:nth-of-type(3) {
+                        top: 100%;
+                    }
+                }
+                &.active > span {
+                    &:first-of-type {
+                        opacity: 0;
+                    }
+
+                    &:nth-of-type(2) {
+                        transform: rotate(45deg);
+                    }
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+        .nav__burger {
+            position: fixed;
+            top: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all ease 0.5s;
+            overflow: hidden;
+            &.active {
+                opacity: 0.9;
+                top: 0;
+                z-index: -1;
+                padding-top: 200px;
+            }
+            &__link {
+                margin-bottom: 32px;
+                text-decoration: none;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                color: #c7c7c7;
+                text-transform: uppercase;
+                &--logo {
+                    z-index: 3;
+                }
             }
         }
     }
 
     .intro {
+        transition: all 0.5s;
+        &.hidden {
+            background: #000;
+        }
         &__text {
+            &--inner.active {
+                padding-top: 21em;
+            }
             .text--title {
                 margin-bottom: 3rem;
             }
@@ -1024,6 +1151,9 @@ footer {
             }
 
             .text--footer {
+                &.hidden {
+                    opacity: 0;
+                }
                 .arrow {
                     margin-top: 5rem;
                 }
@@ -1116,13 +1246,18 @@ footer {
 @media screen and (max-width: 576px) {
     .header {
         margin-top: 88px;
-        background: linear-gradient(180deg, #010101 -17.5%, rgba(1, 1, 1, 0) 100%);
+        background: linear-gradient(
+            180deg,
+            #010101 -17.5%,
+            rgba(1, 1, 1, 0) 100%
+        );
         &__link {
             padding: 0;
         }
     }
     .intro {
-        background: #000 url('../Images/PNG/headerBackground--small.png') no-repeat;
+        background: #000 url('../Images/PNG/headerBackground--small.png')
+            no-repeat;
         background-position: center;
         background-size: 100%;
 
