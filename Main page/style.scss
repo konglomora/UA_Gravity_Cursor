@@ -20,10 +20,6 @@ body {
     max-width: 1200px;
 }
 
-// .container-fluid {
-//     max-width: 2000px;
-// }
-
 body a {
     outline: none;
 }
@@ -65,6 +61,55 @@ body a {
         color: #ffffff;
         background-color: transparent;
         border: 1px solid #ffffff;
+    }
+}
+
+.icon {
+    &__arrow {
+        &--down {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 1.5;
+            transition: 0.3s;
+            &:focus,
+            &:hover {
+                stroke-width: 4;
+            }
+        }
+
+        &--right {
+            stroke-width: 1.5;
+            transition: 0.3s;
+            &:focus,
+            &:hover {
+                stroke-width: 4;
+            }
+            &--light {
+                stroke-width: 1.5;
+                transition: 0.3s;
+                &:focus,
+                &:hover {
+                    stroke-width: 4;
+                }
+            }
+        }
+
+        &--left {
+            stroke-width: 1.5;
+            transition: 0.3s;
+            &:focus,
+            &:hover {
+                stroke-width: 4;
+            }
+            &--light {
+                stroke-width: 1.5;
+                transition: 0.3s;
+                &:focus,
+                &:hover {
+                    stroke-width: 4;
+                }
+            }
+        }
     }
 }
 
@@ -251,6 +296,7 @@ body a {
     }
     .opportunities {
         margin-top: 7.6875rem;
+
         &__item {
             width: 21.375rem;
             height: 13.375rem;
@@ -267,6 +313,15 @@ body a {
                 width: 21.375rem;
                 height: 13.375rem;
                 text-transform: uppercase;
+                border: 0px solid #000;
+                transition: 0.4s;
+
+                &:hover,
+                &:focus {
+                    cursor: pointer;
+                    opacity: 1;
+                    background: linear-gradient(360deg, #010101 15.85%, rgba(1, 1, 1, 0) 138.17%);
+                }
             }
             &--shoot {
                 background: url('../Images/PNG/filmingImage.png');
@@ -332,10 +387,9 @@ body a {
     }
     &__photos {
         .large {
-            width: 59.9375rem;
             width: 100%;
             padding: 0px;
-            // margin: 1px;
+
             &__content--wrapper {
                 display: flex;
                 width: 100%;
@@ -403,27 +457,30 @@ body a {
         }
 
         .mountains {
+            box-sizing: border-box;
             background: url('../Images/PNG/guysAtMountainsImage.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            // width: 959px;
-            // height: 551px;
-            // grid-area: largetop;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
         }
         .chevrolet {
             background: url('../Images/PNG/guysAtChevroletImage.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            // grid-area: smalltop1;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #000;
         }
         .kayyaking {
             background: url('../Images/PNG/guyAtKayyak.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            // grid-area: smalltop2;
+            border-top: 1px solid #000;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #000;
         }
 
         .porsche {
@@ -431,7 +488,8 @@ body a {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            // grid-area: smallbottom1;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
         }
 
         .suzuki {
@@ -439,14 +497,17 @@ body a {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            // grid-area: smallbottom2;
+            border-top: 1px solid #000;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
         }
         .sunset {
             background: url('../Images/PNG/susnsetChill.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            // grid-area: smallbottom3;
+            border-top: 1px solid #000;
+            border-left: 1px solid #000;
         }
     }
 
@@ -670,6 +731,27 @@ footer {
             align-items: center;
             .icon {
                 width: 24px;
+                fill: #ffffff;
+                transition: all 0.3s;
+                &--facebook {
+                    &:focus,
+                    &:hover {
+                        fill: #1778f2;
+                    }
+                }
+
+                &--youtube {
+                    &:focus,
+                    &:hover {
+                        fill: #ff0000;
+                    }
+                }
+                &--instagram {
+                    &:focus,
+                    &:hover {
+                        fill: #ecad09;
+                    }
+                }
             }
         }
 
@@ -1032,10 +1114,30 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+    .header {
+        margin-top: 88px;
+        background: linear-gradient(180deg, #010101 -17.5%, rgba(1, 1, 1, 0) 100%);
+        &__link {
+            padding: 0;
+        }
+    }
     .intro {
+        background: #000 url('../Images/PNG/headerBackground--small.png') no-repeat;
+        background-position: center;
+        background-size: 100%;
+
         &__text {
+            &--inner {
+                background: #010101;
+                background: linear-gradient(
+                    0deg,
+                    rgba(1, 1, 1, 0.8796063591) 5%,
+                    rgba(1, 1, 1, 0.1233038381) 44%,
+                    #010101 86%
+                );
+            }
             .text--title {
-                font-size: 50px;
+                font-size: 40px;
                 line-height: 50px;
             }
         }
@@ -1044,6 +1146,9 @@ footer {
     .about {
         .statistic {
             .counter--wrapper {
+                &:first-child {
+                    margin-bottom: 43px;
+                }
                 .counter {
                     &--number {
                         font-size: 44px;
@@ -1066,8 +1171,10 @@ footer {
         }
 
         .story {
-            background-position: left;
-            background-size: 157%;
+            .story--wrapper {
+                background-position: left;
+                background-size: 157%;
+            }
         }
     }
 
@@ -1177,6 +1284,17 @@ footer {
                 height: 39px;
                 margin: auto 0;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .intro {
+        &__text--inner {
+            padding-top: 16.1875em;
+        }
+        .text--title {
+            margin-bottom: 3rem;
         }
     }
 }

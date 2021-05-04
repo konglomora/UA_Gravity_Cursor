@@ -58,6 +58,44 @@ body a {
   border: 1px solid #ffffff;
 }
 
+.icon__arrow--down {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5;
+  transition: 0.3s;
+}
+.icon__arrow--down:focus, .icon__arrow--down:hover {
+  stroke-width: 4;
+}
+.icon__arrow--right {
+  stroke-width: 1.5;
+  transition: 0.3s;
+}
+.icon__arrow--right:focus, .icon__arrow--right:hover {
+  stroke-width: 4;
+}
+.icon__arrow--right--light {
+  stroke-width: 1.5;
+  transition: 0.3s;
+}
+.icon__arrow--right--light:focus, .icon__arrow--right--light:hover {
+  stroke-width: 4;
+}
+.icon__arrow--left {
+  stroke-width: 1.5;
+  transition: 0.3s;
+}
+.icon__arrow--left:focus, .icon__arrow--left:hover {
+  stroke-width: 4;
+}
+.icon__arrow--left--light {
+  stroke-width: 1.5;
+  transition: 0.3s;
+}
+.icon__arrow--left--light:focus, .icon__arrow--left--light:hover {
+  stroke-width: 4;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -236,6 +274,13 @@ body a {
   width: 21.375rem;
   height: 13.375rem;
   text-transform: uppercase;
+  border: 0px solid #000;
+  transition: 0.4s;
+}
+.about .opportunities__item--text:hover, .about .opportunities__item--text:focus {
+  cursor: pointer;
+  opacity: 1;
+  background: linear-gradient(360deg, #010101 15.85%, rgba(1, 1, 1, 0) 138.17%);
 }
 .about .opportunities__item--shoot {
   background: url("../Images/PNG/filmingImage.png");
@@ -288,7 +333,6 @@ body a {
   padding: 0;
 }
 .work__photos .large {
-  width: 59.9375rem;
   width: 100%;
   padding: 0px;
 }
@@ -352,40 +396,55 @@ body a {
   padding: 0;
 }
 .work__photos .mountains {
+  box-sizing: border-box;
   background: url("../Images/PNG/guysAtMountainsImage.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 .work__photos .chevrolet {
   background: url("../Images/PNG/guysAtChevroletImage.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .work__photos .kayyaking {
   background: url("../Images/PNG/guyAtKayyak.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .work__photos .porsche {
   background: url("../Images/PNG/twoPorsche.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
 }
 .work__photos .suzuki {
   background: url("../Images/PNG/greenSuzuki.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 .work__photos .sunset {
   background: url("../Images/PNG/susnsetChill.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
 }
 .work .button--wrapper {
   margin-top: 40px;
@@ -578,6 +637,17 @@ footer .footer__body .footer__icons {
 }
 footer .footer__body .footer__icons .icon {
   width: 24px;
+  fill: #ffffff;
+  transition: all 0.3s;
+}
+footer .footer__body .footer__icons .icon--facebook:focus, footer .footer__body .footer__icons .icon--facebook:hover {
+  fill: #1778f2;
+}
+footer .footer__body .footer__icons .icon--youtube:focus, footer .footer__body .footer__icons .icon--youtube:hover {
+  fill: #ff0000;
+}
+footer .footer__body .footer__icons .icon--instagram:focus, footer .footer__body .footer__icons .icon--instagram:hover {
+  fill: #ecad09;
 }
 footer .footer__body .footer__naming {
   text-transform: uppercase;
@@ -840,11 +910,31 @@ footer .footer__body .footer__naming {
   }
 }
 @media screen and (max-width: 576px) {
+  .header {
+    margin-top: 88px;
+    background: linear-gradient(180deg, #010101 -17.5%, rgba(1, 1, 1, 0) 100%);
+  }
+  .header__link {
+    padding: 0;
+  }
+
+  .intro {
+    background: #000 url("../Images/PNG/headerBackground--small.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  .intro__text--inner {
+    background: #010101;
+    background: linear-gradient(0deg, rgba(1, 1, 1, 0.8796063591) 5%, rgba(1, 1, 1, 0.1233038381) 44%, #010101 86%);
+  }
   .intro__text .text--title {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
   }
 
+  .about .statistic .counter--wrapper:first-child {
+    margin-bottom: 43px;
+  }
   .about .statistic .counter--wrapper .counter--number {
     font-size: 44px;
     line-height: 50px;
@@ -860,7 +950,7 @@ footer .footer__body .footer__naming {
   .about .opportunities__item {
     width: 100%;
   }
-  .about .story {
+  .about .story .story--wrapper {
     background-position: left;
     background-size: 157%;
   }
@@ -940,5 +1030,13 @@ footer .footer__body .footer__naming {
     width: 40%;
     height: 39px;
     margin: auto 0;
+  }
+}
+@media screen and (max-width: 376px) {
+  .intro__text--inner {
+    padding-top: 16.1875em;
+  }
+  .intro .text--title {
+    margin-bottom: 3rem;
   }
 }
