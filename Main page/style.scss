@@ -56,12 +56,12 @@ body a {
     line-height: 24px;
     color: #010101;
     transition: 0.5s;
-    &:hover,
-    &:focus {
+    &:hover {
         color: #ffffff;
         background-color: transparent;
         border: 1px solid #ffffff;
     }
+
 }
 
 .icon {

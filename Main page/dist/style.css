@@ -52,7 +52,7 @@ body a {
   color: #010101;
   transition: 0.5s;
 }
-.button-transparent:hover, .button-transparent:focus {
+.button-transparent:hover {
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;

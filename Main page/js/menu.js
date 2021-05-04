@@ -14,5 +14,4 @@ burgerButton.addEventListener('click', function () {
     textFooter.classList.toggle('hidden');
     textInner.classList.toggle('active');
     html.classList.toggle('overflowHidden');
-
 });
